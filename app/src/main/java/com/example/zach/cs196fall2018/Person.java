@@ -2,15 +2,26 @@ package com.example.zach.cs196fall2018;
 
 import java.util.ArrayList;
 
+import sun.jvm.hotspot.utilities.BitMap;
+
 public class Person {
     public static ArrayList<Person> people = new ArrayList<>();
     private String name = "";
     private String email = "";
     private String phone = "";
     private String address = "";
+    private BitMap bmp;
 
     public String getName() {
         return name;
+    }
+
+    public BitMap getBmp() {
+        return bmp;
+    }
+
+    public void setBmp(BitMap bmp) {
+        this.bmp = bmp;
     }
 
     public void setName(String name) {
